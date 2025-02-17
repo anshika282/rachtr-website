@@ -1,0 +1,82 @@
+.contact-banner .banner-section .image-wrapper {
+    height: 211px;
+}
+
+.contact-banner .banner-section .heading-holder {
+    width: 77%;
+    left: 0;
+    right: 0;
+}
+
+.contact-banner .banner-section .image-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.contract-innvo .image-container img{
+    border-radius: 0;
+}
+
+.app-video {
+    width: auto;
+    height: auto;
+    /* border-radius: 5px; */
+}
+/* .app-video a>*, */
+.app-video img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.app-video-slider{
+    position: relative;
+}
+
+.application-videos{
+    background: url(../images/application-bg.avif);
+}
+
+.application-videos .app-video-slider .slick-next:before{
+    font-family: FontAwesome;
+    content: '\f105';
+    font-size: 90px;
+    color: #eeeeee;
+}
+.application-videos .app-video-slider .slick-prev,
+.application-videos .app-video-slider .slick-next{
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+}
+
+.application-videos .app-video-slider .slick-prev{
+    left: 20px;
+}
+.application-videos .app-video-slider .slick-next{
+    right: 20px;
+}
+.application-videos .app-video-slider .slick-prev:before{
+    font-family: FontAwesome;
+    content: '\f104';
+    font-size: 90px;
+    color: #ffffff;
+ }
+
+
+ @media (max-width:499px){
+    .contact-banner .banner-section .heading-holder {
+        text-align: left;
+    }
+
+    .contact-banner .image-container {
+        height: auto;
+    }
+ }

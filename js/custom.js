@@ -240,14 +240,17 @@ $(document).ready(function(){
 $('[data-fancybox="gallery"]').fancybox({
   
 });   
+$('[data-fancybox]').fancybox({
+  
+});  
 
 $('.project-slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: false,
-  // autoplaySpeed: 0,
-  // speed: 3000, 
-  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  speed: 2000, 
+  arrows: true,
   dots: false,
   cssEase: 'linear', 
   pauseOnHover: true,
@@ -255,6 +258,42 @@ $('.project-slider').slick({
   infinite: false,
      
 });
+
+$('.marvels-slider').slick({
+  dots: true,
+  arrows : true,
+  infinite: true,
+  speed: 500,
+  autoplay: false,
+  fade: false,
+  cssEase: 'linear'
+});  
+
+$('.marvel-image-slider').slick({
+  dots: false,
+  arrows : false,
+  infinite: true,
+  speed: 500,
+  autoplay: true,
+  fade: true,
+  cssEase: 'linear'
+});   
+
+ $('.app-video-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 0,
+  centerMode: true, 
+  speed: 3000, 
+  arrows: true,
+  dots: false,
+  cssEase: 'linear', 
+  pauseOnHover: true,
+  pauseOnFocus:true,
+  infinite: true,
+
+}); 
     
     
     

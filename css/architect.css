@@ -37,8 +37,8 @@
     /* height: 200px; */
 }
 .project-slide{
-    width: 200px;
-    height: 200px;
+    /* width: 200px; */
+    height: 240px;
 }
 
 .project-slider img{
@@ -122,23 +122,37 @@
 }
 .icon-circle {
     background: #e85c2b;
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     font-size: 18px;
+    box-shadow: 0 7px 0 rgb(255 137 93 / 50%);
+}
+
+.icon-circle svg{
+    width: 80%;
+    height: 63%;
+    object-fit: cover;
+    fill: #ffffff;
 }
 .bullet-list {
     padding-left: 20px;
 }
 
+.our-industries .container {
+    max-width: 1180px;
+}
+
 .project-slider {
-    max-width: 390px;  /* Set slider width */
+    /* max-width: 390px; */
+    max-width: 350px;
     margin: 0 auto;     /* Center the slider */
     overflow: hidden;   /* Prevent any overflow */
+    position: relative;
 }
 
 .project-slide {
@@ -148,7 +162,130 @@
 
 .project-slide img {
     width: 100%;        /* Ensure all images take the full width */
-    height: 250px;      /* Set a fixed height (Adjust as needed) */
+    /* height: 250px;      Set a fixed height (Adjust as needed) */
     object-fit: cover;  /* Crop and fit images properly */
     display: block;
+}
+.our-industries .any_projects ul li div.projects_blogs .projects_txt {
+    text-align: left;
+    height: 125px;
+    line-height: 24px;
+}
+
+.our-industries .any_projects ul li div.projects_blogs .projects_txt p{
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.our-industries .project-slider .slick-next:before{
+    font-family: FontAwesome;
+    content: '\f105';
+    font-size: 90px;
+    color: #eeeeee;
+}
+.our-industries  .project-slider .slick-prev,
+.our-industries .project-slider .slick-next{
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.our-industries  .project-slider .slick-prev{
+    left: 20px;
+}
+.our-industries  .project-slider .slick-next{
+    right: 20px;
+}
+.our-industries  .project-slider .slick-prev:before{
+    font-family: FontAwesome;
+    content: '\f104';
+    font-size: 90px;
+    color: #ffffff;
+ }
+
+.our-industries .project-slider:hover .slick-prev,
+.our-industries .project-slider:hover .slick-next{
+    opacity: 1; 
+}
+
+.our-industries {
+    background: none;
+}
+
+/* .icon-list > * {
+    max-width: 48%;
+    flex: 0 0 48%;
+} */
+
+.slide-card li{
+    list-style-type: disc !important;
+}
+
+.architectural-marvels .slide-container .image-container {
+    height: 480px;
+    position: relative;
+}
+.architectural-marvels .slide-container .image-container img{
+    height: 100%;
+}
+
+.architectural-marvels .container{
+    max-width: 1180px;
+}
+
+.architectural-marvels .marvels-slider .slick-next:after{
+    font-family: FontAwesome;
+    content: '\f105';
+    font-size: 50px;
+    color: #d1651a;
+}
+.our-industries  .project-slider .slick-prev,
+.our-industries .project-slider .slick-next{
+    position: absolute;
+    z-index: 1;
+    /* top: 70px; */
+}
+
+.architectural-marvels .marvels-slider .slick-prev{
+    left: -62px;
+}
+/*
+.our-industries  .project-slider .slick-next{
+    right: 20px;
+} */
+.architectural-marvels .marvels-slider .slick-prev:before{
+    font-family: FontAwesome;
+    content: '\f104';
+    font-size: 50px;
+    color: #d1651a;
+ }
+
+.architectural-marvels .marvels-slider .slide-container .marvel-image-slider .image-container .hover-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out; 
+}
+
+.architectural-marvels .marvels-slider .slide-container .marvel-image-slider .image-container:hover .hover-overlay {
+    opacity: 1; 
+}
+
+.architectural-marvels .marvels-slider .slick-dots li.slick-active button:before{
+   content: '\25CB' !important;
+}
+.architectural-marvels .marvels-slider .slick-dots li button{
+    color: #000000;
+}
+
+.architectural-marvels .marvels-slider .slick-dots li button:before{
+    font-size: 26px;
 }

@@ -1,0 +1,684 @@
+
+.bnr_sldr .content-list{
+    color: #ffffff;
+}
+.bnr_sldr .content-list p{
+   font-weight: 600;
+}
+.bnr_sldr .content-list span{
+    text-decoration: underline;
+}
+.bnr_sldr .banner-sec .content-details h2{
+    line-height: 52px;
+}
+.bnr_sldr .banner-sec .content-details p{
+    font-size: 20px;
+    line-height: 25px;
+}
+.bnr_sldr .item .banner-sec video {
+    height: 780px;
+}
+.bnr_sldr .item .banner-sec .banner_overlay {
+    height: 100%;
+}
+
+.our-clients{
+    background: #F2F1F1;
+}
+
+.our-clients .clients-content{
+    display: flex;
+    gap: 5px;
+    align-items: center; /* Center image inside */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.our-clients .clients-content .client-slider {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.our-clients .clients-content .client-slider img {
+    width: 90%;
+    height: 100%;
+    /* margin: 0 auto; */
+    object-fit: contain;
+}
+
+.our-clients .clients-content .heading-holder span,
+.build-to-last .heading-holder span,
+.locations-served .heading-holder span,
+.common-faqs .heading-holder span,
+.bnr_sldr .content-details span,
+.experience-rachtr .heading-holder span{
+    color: #EF6E25;
+}
+
+.experience-rachtr .heading-holder{
+    text-align: center;
+}
+.our-clients .clients-content .client-slider .client-slide img:hover{
+    background: rgba(155, 155, 155, 0.8);
+}
+
+.our-clients .clients-content .client-slider .client-slide{
+    display: flex; /* Ensure full height usage */
+    align-items: center; /* Center image inside */
+    justify-content: center;
+    width: inherit;
+    height: inherit;
+}
+
+.comprnsive_solution {
+    background: none;
+}
+
+.build-to-last {
+    background: url(../images/build-last-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    position: relative;
+    /* height: 100vh; */
+}
+
+.build-to-last .heading-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.build-to-last .bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.build-to-last .benefits-card .benefit-img{
+        width: 68px;
+        height: 68px;
+}
+.build-to-last .benefits-card .benefit-img svg{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    fill: white;
+}
+.build-to-last .col-12 {
+    z-index: 1;
+}
+.build-to-last .benefits-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    max-width: 310px;
+    margin: 0 auto;
+}
+.build-to-last .benefits-card h3{
+    font-size: 22px;
+    font-weight: 700;
+    color: #EF6E25;
+}
+
+.build-to-last .benefits-note{
+    text-align: center;
+}
+.build-to-last .benefits-note p{
+   font-size: 18px;
+}
+.build-to-last .benefits-note a{
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: 600;
+ }
+ .build-to-last .benefits-blocks {
+    margin: 30px 0;
+ }
+ .comprnsive_solution .case_studies .case_studies_downd .downd_img {
+    width: inherit;
+    height: inherit;
+}
+
+.comprnsive_solution .case_studies .case_studies_downd .downd_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.comprnsive_solution .case_studies .case_studies_contn a {
+    margin-top: 0;
+}
+.comprnsive_solution .case_studies .case_studies_contn {
+    height: 518px;
+}
+.comprnsive_solution .case_studies .case_studies_downd {
+    height: 518px;
+    position: relative;
+}
+.comprnsive_solution .case_studies .case_studies_downd .before-block {
+    position: absolute;
+    left: 0;
+    bottom: 31px;
+    color: white;
+    background: #EF6E25;
+    padding: 5px 10px;
+    width: 16%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+.comprnsive_solution .case_studies .case_studies_downd .after-block {
+    position: absolute;
+    right: 0;
+    bottom: 31px;
+    color: white;
+    background: #EF6E25;
+    padding: 5px 10px;
+    width: 16%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+.comprnsive_solution .case_studies .case_studies_contn {
+    background: #eeeeee;
+}
+
+.locations-served .locations-block .location-img{
+    width: 50%;
+    height: 100%;
+}
+.locations-served .locations-block .location-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.experience-rachtr{
+    background: #eeeeee;
+}
+.experience-rachtr .form-container {
+    background-color: #EF6E25;
+    padding: 30px;
+    /* border-radius: 10px; */
+    /* max-width: 800px; */
+    /* margin: 50px auto; */
+    color: white;
+}
+.experience-rachtr .form-container h3 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+}
+.experience-rachtr .note {
+    font-size: 14px;
+    font-weight: 700;
+    background: black;
+    color: white;
+   
+    display: inline;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* .experience-rachtr .form-control:required:invalid {
+    background: red;
+    border-color:#ffffff;
+} */
+.experience-rachtr .btn-submit {
+    background: white;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    width: 50%;
+    border: none;
+}
+.experience-rachtr .btn-submit:hover {
+    background: #ddd;
+}
+
+.experience-rachtr .experience-content .experience-slide p {
+    /* text-align: center; */
+}
+
+
+.experience-rachtr .experience-content .form-container form label{
+    font-size: 14px;
+    font-weight: 600;
+}
+.experience-rachtr .experience-content .form-container form input:hover,
+.experience-rachtr .experience-content .form-container form select:hover{
+    background: #F59F6F;
+}
+.experience-rachtr .experience-content .form-container form input,select,
+.experience-rachtr .experience-content .form-container form select:hover{
+    border-color:#8A4622 ;
+}
+
+.experience-rachtr .experience-content .form-container span{
+    color: rgb(236, 14, 14);
+}
+.experience-rachtr .experience-content .experience-fade-efct .img{
+    width: auto;
+    height: auto;
+    position: relative;
+}
+.experience-rachtr .experience-content .experience-fade-efct .img .img_overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: rgba(251, 251, 251, 0.7);
+}
+
+.experience-rachtr .experience-content .experience-fade-efct .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.experience-rachtr .experience-content .form-container form select{
+    border-radius: 0;
+}
+
+
+
+.get-free-quote{
+    background: url(../images/get-free-quote-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #ffffff;
+}
+
+.get-free-quote .banner_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.get-free-quote .get-free-content{
+    position: relative;
+    z-index: 1;
+}
+
+.get-free-quote .get-free-content .banner-buttons .btn-primary:hover,
+.bnr_sldr .item .banner-sec .banner_overlay .content .banner-buttons .btn-primary:hover {
+    background-color: white !important;
+    color: black !important;    
+}
+.get-free-quote .get-free-content .banner-buttons .btn-primary:hover,
+.bnr_sldr .item .banner-sec .banner_overlay .content .banner-buttons .btn-primary:hover
+{
+    color: #ef6e25 !important; /* Orange color */   
+}
+.get-free-quote .get-free-content .banner-buttons .btn-outline-light:hover,
+.bnr_sldr .item .banner-sec .banner_overlay .content .banner-buttons .btn-outline-light:hover {
+    border-color: rgb(0, 88, 227);;
+}
+.get-free-quote .heading-holder h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.slider-container {
+    max-width: 1140px;  /* Adjust to match your desired container width */
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+.experience-fade-efct{
+    max-width: 618px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*slic styles: */
+.experience-fade-efct .slick-next {right: 0;background: #ef6e25;height: 134px;
+    width: 32px;}
+.experience-fade-efct .slick-next:hover{background: #000000;}
+.experience-fade-efct .slick-prev{left: 0;z-index: 1;background: #ef6e25;height: 134px;
+    width: 32px;}
+.experience-fade-efct .slick-prev:hover{background: #000000;}
+.experience-fade-efct .slick-next:before{font-family: FontAwesome;content: '\f105';font-size: 30px; color: #ffffff;}
+.experience-fade-efct .slick-prev:before{font-family: FontAwesome;content: '\f104';font-size: 30px; color: #ffffff;}
+.experience-fade-efct .slick-dots{display: none;}
+
+
+
+
+.case-studies-item .slick-dots li button:before {
+    font-size: 16px;
+    color: #ef6e25;
+    opacity: 1;
+    content: "■" !important;
+}
+
+
+
+
+
+@media (max-width: 1239px) {
+    .case-studies-item .slick-dots {
+        /* bottom: 0; */
+    }
+}
+
+@media (min-width:480px) and  (max-width:768px) {
+    .bnr_sldr .item .banner-sec .banner_overlay .content {
+        padding: 30% 0 0 3%;
+    }
+    .bnr_sldr .item .banner-sec .banner_overlay .content .content-list {
+        display: block;
+    }
+    .bnr_sldr .item .banner-sec .banner_overlay .content .content-details {
+        DISPLAY: flex;
+        width: 80%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .bnr_sldr .item .banner-sec .banner_overlay .content .content-details h2 {
+        font-size: 29px;
+        line-height: 35px;
+    }
+    .bnr_sldr .item .banner-sec .banner_overlay .content .content-details p {
+        font-size: 21px;
+        line-height: 23px;
+    }
+    .bnr_sldr .content-list p {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .bnr_sldr .item .banner-sec .banner_overlay .content .banner-buttons button{
+        font-size: 11px;
+    }
+    .our-clients .clients-content .client-slider {
+        width: 100%;
+    }
+    .comprnsive_solution .case_studies .case_studies_contn h5 {
+      font-size: 26px;
+    }
+    .comprnsive_solution .case_studies .case_studies_contn a {
+        font-size: 22px;
+    margin: 21px;
+    }
+    .comprnsive_solution .case_studies .case_studies_contn p {
+        font-size: 20px;
+    }
+    .comprnsive_solution .case_studies .case_studies_downd .before-block {
+        width: 24%;
+        font-size: 15px;
+    }
+    .comprnsive_solution .case_studies .case_studies_downd .after-block {
+        width: 24%;
+        font-size: 15px;
+    }
+    .build-to-last .benefits-card {
+        max-width: none;  
+        gap:15px;
+      }
+      .build-to-last .benefits-blocks {
+          margin: 20px;
+      }
+      .build-to-last .heading-holder h2 {
+        font-size: 41px;
+    }
+      .build-to-last .heading-holder p {
+        font-size: 26px;
+        margin: 20px 0;
+    }
+    .build-to-last .benefits-card h3 {
+        font-size: 30px;
+    }
+    .build-to-last .benefits-card p {
+        font-size: 25px;
+    }
+    .build-to-last .benefits-note p {
+        font-size: 35px;
+    }
+    .build-to-last *:not(:last-child) .benefits-card {
+        margin-bottom: 20px;
+    }
+    .locations-served .locations-block .location-img {
+        height: 280px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+    .locations-served .locations-block .location-img img {
+        object-position: top;
+    }
+    
+    .locations-served .locations-block .location-img {
+        width: 100%;
+    }
+    .experience-fade-efct .slick-next,.experience-fade-efct .slick-prev {
+        display: none !important; ;
+     }
+     .comprnsive_solution .case_studies .case_studies_downd {
+        height:unset;
+        position: relative;
+        margin-top: 20px;
+        
+    }
+    .comprnsive_solution .case_studies .case_studies_contn {
+        text-align: center;
+        height: unset;
+        width: 80%;
+    }
+        .experience-rachtr .form-container h3 {
+        font-size: 41px;
+        margin-bottom: 12px;
+    }
+    .experience-rachtr .form-container {
+        padding: 30px 0px;
+    }
+    .experience-rachtr .form-container h3 {
+        font-size: 35px;
+        margin-bottom: 12px;
+    }
+    .experience-rachtr .form-container .note-wrapper {
+        margin: 20px 50px;
+        line-height: 24px;
+    }
+    .experience-rachtr .note {
+        font-size: 20px;
+    }
+    .experience-rachtr .experience-content .form-container form label {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .experience-rachtr .experience-content .form-container form input, select {
+        height: 63px;
+    }
+    .experience-rachtr .experience-content .form-container form button {
+        width: 100%;
+        height: 63px;
+        font-size: 25px;
+    }
+    .experience-rachtr .experience-content .form-container form select,
+    .experience-rachtr .experience-content .form-container form input,
+    .experience-rachtr .experience-content .form-container form textarea{
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width:480px) {
+    .bnr_sldr .item .banner-sec .banner_overlay .content .content-list {
+        display: flex;
+    }
+    .bnr_sldr .item .banner-sec video, .bnr_sldr .item .banner-sec .banner_overlay {
+        height: 500px;
+    }
+    .bnr_sldr .item .banner-sec .banner_overlay .content {
+        padding: 30% 0 0 3%;
+    }
+    .bnr_sldr .item .banner-sec .banner_overlay .content .content-details p {
+        line-height: 16px;
+        padding-top: 10px;
+    }
+    .bnr_sldr .item .banner-sec .banner_overlay .content .banner-buttons button{
+        font-size: 9px;
+    }
+    .bnr_sldr .item .banner-sec .banner_overlay .content .content-details h2 {
+        line-height: 25px;
+    }
+    .our-clients .clients-content .client-slider {
+        width: 100%;
+    }
+    .locations-served .locations-block .location-img {
+        width: 100%;
+    }
+    .comprnsive_solution .case_studies .case_studies_downd {
+        height: unset;
+        width: 100%; /* Adjusted to take full width */
+        margin-bottom: 20px; /* Added spacing between image and content */
+    }
+
+    .comprnsive_solution .case_studies .case_studies_contn {
+        text-align: center;
+        height: auto; /* Adjusted to fit content */
+        padding: 20px; /* Added padding for better spacing */
+        width: 85%;
+    }
+
+    .comprnsive_solution .case_studies .case_studies_downd .downd_img img {
+        width: 100%;
+        height: auto; /* Adjusted to maintain aspect ratio */
+    }
+
+    .comprnsive_solution .case_studies .case_studies_downd .before-block, .comprnsive_solution .case_studies .case_studies_downd .after-block {
+        width: 25%;
+        font-size: 10px;
+        bottom: 10px;
+    }
+
+    .comprnsive_solution .case_studies .case_studies_contn a {
+        /* display: block; */
+        margin-top: 10px; /* Added spacing for the link */
+    }
+    .case-studies-item .slick-prev {
+        left: 0px;
+        top: 41%;
+    }
+    .case-studies-item .slick-next {
+        right: 0px;
+        top: 41%;
+    }
+    
+    
+    
+    
+    
+    
+
+    .build-to-last .benefits-card {
+      max-width: none;  
+      gap:10px;
+    }
+    .build-to-last .benefits-blocks {
+        margin: 20px;
+    }
+    .build-to-last .benefits-blocks .benefits-card p{
+        font-size: 16px;
+    }
+    .build-to-last .benefits-note p {
+        font-size: 23px;
+    }
+    .build-to-last *:not(:last-child) .benefits-card {
+        margin-bottom: 20px;
+    }
+
+    .experience-rachtr .experience-content .form-container form input,select{
+        height: 50px;
+    }
+    .experience-rachtr .form-container {
+        padding: 30px 0px;
+    }
+    .experience-rachtr .form-container h3 {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+    .experience-rachtr .form-container .note-wrapper {
+        margin: 0px 40px;
+    line-height: 23px;
+    }
+    .experience-rachtr .note {
+        font-size: 19px;
+    }
+    .experience-rachtr .experience-content .form-container form label{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .experience-rachtr .experience-content .form-container form button{
+        width: 100%;
+    }
+
+    .experience-fade-efct .slick-next,.experience-fade-efct .slick-prev {
+       display: none !important; ;
+    } 
+
+
+
+
+    .get-free-quote .heading-holder h2 {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+    .get-free-quote .get-free-content .banner-buttons {
+        width: 85%;
+    }
+
+
+}
+
+@media (max-width:768px) {
+   
+
+}
+
+@media (max-width:990px) {
+    .experience-fade-efct {
+       max-width: unset;
+       margin: auto;
+    }
+    .comprnsive_solution .case_studies .case_studies_downd .before-block {
+        width: 20%;
+    }
+    
+}
+
+
+
+
+
+
+

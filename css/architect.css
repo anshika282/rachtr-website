@@ -1,0 +1,154 @@
+.architect-banner .banner-section .heading-holder{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    flex-direction: column;
+    left: 0;
+    right: 0;   
+}
+
+.innovation-solutions .heading-holder h2{
+    font-size: 24px;
+}
+
+.innovation-solutions .image-container img {
+    box-shadow: 15px 15px 0 rgba(239, 117, 3, 0.958);
+}
+
+.our_strengths .any_projects ul li div.projects_blogs video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.architect-center .cmp_solutn_heding {
+    text-align: start;
+}
+
+
+.project-slider{
+    width: inherit;
+    /* height: 200px; */
+}
+.project-slide{
+    width: 200px;
+    height: 200px;
+}
+
+.project-slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.collab-section {
+    display: flex;
+    min-height: 300px;
+}
+
+.collab-left {
+    background-color: white;
+    padding: 50px;
+}
+
+.collab-right {
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+.highlight {
+    color: #E87722;
+    font-weight: bold;
+}
+
+.cta-btn {
+    background-color: #E87722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background-color: #d1651a;
+    color: white;
+}
+
+.slide-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+.slide-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.slide-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.image-container img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.details-container {
+    padding: 20px;
+}
+.highlight-text {
+    color: #e85c2b;
+    font-weight: bold;
+}
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.icon-circle {
+    background: #e85c2b;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+}
+.bullet-list {
+    padding-left: 20px;
+}
+
+.project-slider {
+    max-width: 390px;  /* Set slider width */
+    margin: 0 auto;     /* Center the slider */
+    overflow: hidden;   /* Prevent any overflow */
+}
+
+.project-slide {
+    width: 100%;        /* Each slide takes full width */
+    text-align: center;
+}
+
+.project-slide img {
+    width: 100%;        /* Ensure all images take the full width */
+    height: 250px;      /* Set a fixed height (Adjust as needed) */
+    object-fit: cover;  /* Crop and fit images properly */
+    display: block;
+}

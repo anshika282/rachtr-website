@@ -1,0 +1,589 @@
+.bnr_sldr .item .banner-sec .banner_overlay .content .content-details {
+    width: 100%;
+}
+
+.bnr_sldr .item .banner-sec .banner_overlay .content .content-details p {
+    padding: 0;
+}
+.what-is-epoxy .container {
+    width: 80%;
+}
+.what-is-epoxy .point-style{
+    margin: 0;
+    text-align: left;
+    list-style-type: disc;
+    margin-left: 15px;
+}
+
+.what-is-epoxy .epoxy-img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.what-is-epoxy .epoxy-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.what-is-epoxy .epoxy-img .bg-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.5);
+}
+
+.what-is-epoxy .epoxy-img .image-top{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.what-is-epoxy .epoxy-img .text-overlay{
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 16%;
+    left: 55%;
+    right: 0;
+    color: white;
+    display: flex
+;
+    flex-direction: column;
+    gap: 47px;
+
+}
+
+.what-is-epoxy .epoxy-img .text-overlay p{
+    font-size: 36px;
+    margin: 0;
+}
+.what-is-epoxy .epoxy-img .bg-img-wrapper{
+    height: auto;
+    position: relative;
+}
+
+.what-is-epoxy .epoxy-img .bg-img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.epoxy-solutions{
+    background: #eeeeee;
+}
+
+.epoxy-solutions .epoxy-solution-content .solutions-list {
+    display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+}
+.epoxy-solutions .epoxy-solution-content .heading-holder {
+    text-align: center;
+}
+
+.epoxy-solutions .epoxy-solution-content .heading-holder span,
+.epoxy-floor-cost .epoxy-floor-content .heading-holder span,
+.what-is-epoxy .why-epoxy-content .heading-holder span{
+    color: #EF6E25;
+}
+
+
+.epoxy-solutions .epoxy-solution-content .solutions-list .solution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #EF6E25;
+    /* width: 300px; */
+    margin: 0;
+    gap: 25px;
+    text-align: center;
+}
+
+
+
+.epoxy-solutions .epoxy-solution-content .solutions-list .solution .img-wrapper{
+    height: 105px;
+    width: 105px;
+    margin: 0;
+    background: #EF6E25;
+    border-radius: 50%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 9px 0 rgba(236, 153, 20, 0.6);
+}
+
+.epoxy-solutions .epoxy-solution-content .solutions-list .solution p{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.epoxy-solutions .epoxy-solution-content .solutions-list .solution .img-wrapper svg{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+.epoxy-solutions .epoxy-solution-content .solutions-list svg *{
+
+    fill: #FFFFFF !important;
+    /* stroke: #FFFFFF !important; */
+}
+
+.epoxy-floor-cost {
+    background: url("../images/y-floor-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.epoxy-floor-cost::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.epoxy-floor-cost .epoxy-floor-content {
+    z-index: 1;
+}
+
+.epoxy-floor-cost .epoxy-floor-content .heading-holder h2{
+    font-size: 41px;
+}
+.epoxy-floor-cost .epoxy-floor-content .components-factors p,
+.epoxy-floor-cost .epoxy-floor-content .components p{
+    font-size: 36px;
+    font-weight: 700;
+}
+.epoxy-floor-cost .epoxy-floor-content .components-factors .component-text {
+    border: 1px solid white;
+    background: rgb(255,255,255,0.3);
+    padding: 20px;
+}
+
+.epoxy-floor-cost .epoxy-floor-content .components-factors .component-text p{
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.epoxy-floor-cost .epoxy-floor-content .components .component-list {
+    border: 1px solid white;
+    background: rgb(255,255,255,0.3);
+    padding: 20px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.epoxy-floor-cost .epoxy-floor-content .components .component-list .component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+}
+
+.epoxy-floor-cost .epoxy-floor-content .components .component-list .component .img-wrapper{
+    width: 65px;
+    height: 50px;
+    margin: 0;
+}
+
+.epoxy-floor-cost .epoxy-floor-content .components .component-list .component .img-wrapper svg{
+    fill: #ffffff;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.epoxy-floor-cost .epoxy-floor-content .components .component-list .component p{
+    font-size: 16px;
+    margin: 0;
+}
+
+
+.factors-of-epoxy {
+    background: #eeeeee;
+    padding: 60px 0;
+    position: relative;
+}
+
+.factors-of-epoxy .container ,.colors-available .container{
+        max-width: 1440px;
+}
+
+.text-orange {
+    color: #f57224;
+}
+
+.group1 h5{
+    font-size: 18px;
+}
+.group1 p{
+    font-size: 14px;
+}
+.bg-white {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.factor-box {
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 260px;
+
+}
+
+
+.factor-number {
+    font-size: 55px;
+    font-weight: bold;
+    color: #f57224;
+    line-height: 0.8;
+}
+
+
+.info-box {
+   
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 11px 11px 0 rgba(0, 0, 0, 0.2);
+}
+
+.factor-lists{
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 4px;
+    row-gap: 55px;
+    flex-direction: row;
+}
+
+.factor{
+    display: flex
+    ;
+        flex-direction: column;
+        max-width: 335px;
+        margin: 0;
+}
+
+.factor-img .img-wrapper {
+    width: auto;
+    height: auto;
+}
+
+.factors-of-epoxy .factor-img .image-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.colors-available h3{
+    color: #EF6E25;
+}
+.color-box {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+    margin: 0;
+}
+
+.colors-available .new-color>* {
+    /* width :275px; */
+    flex: 0 0 19%;
+    max-width: 19%;
+}
+
+.colors-available .color-box a p{
+    color: #FFFFFF;
+}
+.colors-available .color-box a:hover{
+    background-color: #595959 !important;
+    cursor: pointer;
+}
+.colors-available .color-box a:hover p {
+    visibility: hidden; /* Hides the text */
+}
+
+
+
+.colors-available .color-box .heart-btn {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    color: #595959;
+}
+
+.colors-available .color-box:hover .heart-btn {
+    display: block;
+    stroke: #ffffff;
+}
+
+/* Toggle red fill on click */
+.heart-btn.clicked svg {
+    fill: rgb(255, 0, 0);
+    stroke: rgb(255, 0, 0);
+}
+
+.epoxy-solutions .epoxy-solution-content .solutions-list>*{
+    flex: 0 0 23%;
+    max-width: 23%;
+}
+
+.factor-bg-style{
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.bnr_sldr .content-list p {
+    font-weight: 600;
+    margin: 0;
+}
+
+@media (min-width:1700px){
+    .bnr_sldr .item .banner-sec .banner_overlay .content {
+        padding: 10% 0 0 0;
+    }
+}
+
+@media (max-width:480px) {
+    .bnr_sldr .item .banner-sec .banner_overlay .content .content-details h2 {
+        font-size: 16px;
+    }
+    .bnr_sldr .item .banner-sec video, .bnr_sldr .item .banner-sec .banner_overlay {
+        height: 520px;
+    }
+
+    .what-is-epoxy .why-epoxy-content .heading-holder h2,
+     .epoxy-solutions .epoxy-solution-content .heading-holder h2{
+        line-height: 34px;
+    }
+
+    .epoxy-solutions .epoxy-solution-content .heading-holder h2,
+    .epoxy-floor-cost .epoxy-floor-content .heading-holder h2{
+        font-size: 22px;
+    }
+    
+    .what-is-epoxy .why-epoxy-content .text-holder p{
+        font-size: 16px;
+    }
+    .what-is-epoxy .epoxy-img .image-top {
+        width: 85%;
+        left: 31px;
+        right: 0;
+    }
+    .what-is-epoxy .epoxy-img .bg-img-wrapper img {
+        width: 90%;
+    }
+
+    .epoxy-solutions .epoxy-solution-content .text-content p{
+        line-height: 22px;
+    }
+    .epoxy-solutions .epoxy-solution-content .solutions-list>*{
+        flex: 0 0 47%;
+        max-width: 47%;
+    }
+    .epoxy-solutions .epoxy-solution-content .solutions-list .solution .img-wrapper {
+        height: 80px;
+        width: 80px;
+    }
+    .epoxy-solutions .epoxy-solution-content .solutions-list .solution p {
+        font-size: 14px;
+    }
+    .epoxy-solutions .epoxy-solution-content .solutions-list .solution {
+        text-align: center;
+        width: unset;
+    }
+
+    .epoxy-floor-cost .epoxy-floor-content .components-factors p,
+    .epoxy-floor-cost .epoxy-floor-content .components p,
+    .epoxy-floor-cost .epoxy-floor-content .components h4{
+        font-size: 18px;
+    }
+    .epoxy-floor-cost .epoxy-floor-content .components-factors .component-text p{
+        font-size: 12px;
+    }
+    .epoxy-floor-cost .epoxy-floor-content .components .component-list {
+        border: none;
+        background: none;
+    }
+
+    .factors-of-epoxy .factor-lists .factor{
+            background: #ffffff;
+            box-shadow: 10px 10px 0 rgb(0, 0, 0, 0.25);
+    }
+
+    .factors-of-epoxy .factor-lists .factor .factor-box .info-box{
+            padding: 0; 
+             margin-top: 0; 
+             box-shadow: none;
+             border-radius: 0;
+        
+    }
+
+    .factor-bg-style{
+        background: none;
+        border-radius: 0;
+    }
+
+    .color-box {
+        height: 110px;
+    }
+
+    .colors-available .new-color>* {
+        /* width: 275px; */
+        flex: 0 0 47%;
+        max-width: 47%;
+    }
+    .bnr_sldr .item .banner-sec .banner_overlay .content .content-details h2 {
+        margin: 0;
+    }
+}
+
+
+
+@media (min-width:1200px) and (max-width:1358px) {
+    .epoxy-solutions .epoxy-solution-content .solutions-list>* {
+        flex: 1 1 20%;
+        max-width: 29%;
+    }
+    .color-box {
+        margin: 0;
+    }
+    .colors-available .new-color>* {
+        /* width: 275px; */
+        flex: 0 0 24%;
+        max-width: 23%;
+    }
+    .bnr_sldr .item .banner-sec .banner_overlay .content .content-list {
+        display:flex;
+    }
+}
+
+@media (min-width:1000px) and (max-width:1199px) {
+    .epoxy-solutions .epoxy-solution-content .solutions-list>* {
+        flex: 1 1 24%;
+        max-width: 31%;
+    }
+    .color-box {
+        margin: 0;
+    }
+    .colors-available .new-color>* {
+        /* width: 275px; */
+        flex: 0 0 24%;
+        max-width: 23%;
+    }
+    .bnr_sldr .item .banner-sec .banner_overlay .content .content-list {
+        display: flex;
+    }
+}
+
+
+@media (min-width:1300px) {
+    .epoxy-solutions .epoxy-solution-content .solutions-list>* {
+        flex: 0 0 23%;
+        max-width: 23%;
+    }
+}
+
+
+@media  (min-width:768px) and (max-width:996px) {
+    .epoxy-solutions .epoxy-solution-content .solutions-list>* {
+        flex: 0 0 32%;
+        max-width: 32%;
+    }
+
+    .color-box {
+        margin: 0;
+    }
+    .colors-available .new-color>* {
+        flex: 0 0 24%;
+        max-width: 23%;
+    }
+    .color-box {
+        height: 175px;
+    }
+    .what-is-epoxy .epoxy-img .image-top {
+        align-items: center;
+    }
+    .what-is-epoxy .epoxy-img .bg-img-wrapper img {
+        width: 77%;
+    }
+    .bnr_sldr .item .banner-sec .banner_overlay .content .content-list {
+        display: flex;
+    }
+    .our-clients .clients-content .client-slider {
+        width: 100%;
+    }
+
+
+}
+
+@media  (min-width:481px) and (max-width:768px) {
+    .epoxy-solutions .epoxy-solution-content .solutions-list>* {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+    .color-box {
+        height: 145px;
+    }
+    .colors-available .new-color>* {
+        flex: 0 0 31%;
+        max-width: 31%;
+    }
+    .what-is-epoxy .epoxy-img .bg-img-wrapper img {
+        width: 77%;
+    }
+    .bnr_sldr .item .banner-sec .banner_overlay .content .content-details h2 {
+        margin: 0;
+    }
+    .bnr_sldr .content-list p {
+        margin: 0;
+    }
+    
+    .bnr_sldr .item .banner-sec .banner_overlay .content .content-details p {
+        font-size: 17px;
+        line-height: 23px;
+    }
+    .bnr_sldr .item .banner-sec .banner_overlay .content .content-details h2 {
+        font-size: 22px;
+        line-height: 35px;
+    }
+    
+}
+
+
+
+
+

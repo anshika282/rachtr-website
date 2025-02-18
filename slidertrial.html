@@ -1,154 +1,127 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-        <title>RachTR</title>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!--<link rel="stylesheet" href="css/hover-min.css" type="text/css">-->
+<html lang="en">
 
-        <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
-        <link rel="stylesheet" href="css/slick.css" type="text/css">
-        <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
-        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-        <link  href="css/style.css" type="text/css" rel="stylesheet">
-        <link rel="shotcut icon" type="image/x-icon" href="images/favicon.ico">
-        <style>
-          .project-slider {
-    max-width: 390px;  /* Set slider width */
-    margin: 0 auto;     /* Center the slider */
-    overflow: hidden;   /* Prevent any overflow */
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaishui Art Museum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
 
-.project-slide {
-    width: 100%;        /* Each slide takes full width */
-    text-align: center;
-}
+        .museum-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
 
-.project-slide img {
-    width: 100%;        /* Ensure all images take the full width */
-    height: 250px;      /* Set a fixed height (Adjust as needed) */
-    object-fit: cover;  /* Crop and fit images properly */
-    display: block;
-}
-        </style>
-    </head>
+        .museum-title {
+            color: #e76f00;
+            font-weight: bold;
+        }
+
+        .icon-box {
+            background-color: #e76f00;
+            color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .museum-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .museum-info p {
+            margin: 0;
+        }
+
+        .museum-features {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
 <body>
-    <!-- This is a wrapper open -->
-    <div class="wrapper"> 
 
+    <div class="container mt-5">
+        <div class="museum-card">
+            <h4 class="museum-title">Zaishui Art Museum, China</h4>
 
-      <!-- This is a section-2 open -->
-      <section class="our_strengths py-5">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-lg-10 col-md-10 col-sm-12">
-                    <div class="our_strengths_contnt">
-                        <h1 class="pb-3">Our <span class="org">Industries</span></h1>
-                        <p>Innovative Solutions For Every Industrial Challenge</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="museum-info">
+                        <div class="icon-box"><i class="fas fa-drafting-compass"></i></div>
+                        <div>
+                            <p><strong>Architect:</strong></p>
+                            <p>Junya Ishigami + Associates</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="any_projects pt-5">
-                        <ul class="col-lg-12 col-md-12 col-sm-12">
-                          <li class="col-lg-4 col-md-4 col-sm-12 mx-5">
-                            <div class="projects_blogs">
-                                <div class="projects_img pb-1">
-                                    <!-- Video -->
-                                   
-                                </div>
-                        
-                                <!-- Slick Slider inside projects_blogs -->
-                                <div class="project-slider pb-1">
-                                    <div class="project-slide"><img alt="Surat" src="https://static.wixstatic.com/media/386348_b4c2744705764bbf9b670142d8fdbe0f~mv2.jpg"></div>
-                                    <div class="project-slide"><img alt="" src="https://static.wixstatic.com/media/386348_a04ae7f07dbd4324a5b059bcec6d91b6~mv2.jpg"></div>
-                                    <div class="project-slide"><img alt="" src="https://static.wixstatic.com/media/386348_c6311a1c4ed34c70b7ce026c0988fb3c~mv2.jpg"></div>
-                                    <div class="project-slide"><img alt="" src="https://static.wixstatic.com/media/386348_697367b1975c49028d04d1da9406f137~mv2.jpg"></div>
-                                </div>
-                        
-                                <div class="projects_txt">
-                                    <h6>Residential & Commercial Buildings</h6>
-                                    <p>From dream homes to iconic landmarks, RachTR offers reliable solutions for all your building needs.</p>
-                                </div>
-                            </div>
-                        </li>
-                        
-                        <li class="col-lg-4 col-md-4 col-sm-12 mx-5">
-                          <div class="projects_blogs">
-                              <div class="projects_img pb-1">
-                                  <!-- Video -->
-                                 
-                              </div>
-                      
-                              <!-- Slick Slider inside projects_blogs -->
-                              <div class="project-slider pb-1">
-                                  <div class="project-slide"><img alt="Surat" src="https://static.wixstatic.com/media/386348_b4c2744705764bbf9b670142d8fdbe0f~mv2.jpg"></div>
-                                  <div class="project-slide"><img alt="" src="https://static.wixstatic.com/media/386348_a04ae7f07dbd4324a5b059bcec6d91b6~mv2.jpg"></div>
-                                  <div class="project-slide"><img alt="" src="https://static.wixstatic.com/media/386348_c6311a1c4ed34c70b7ce026c0988fb3c~mv2.jpg"></div>
-                                  <div class="project-slide"><img alt="" src="https://static.wixstatic.com/media/386348_697367b1975c49028d04d1da9406f137~mv2.jpg"></div>
-                              </div>
-                      
-                              <div class="projects_txt">
-                                  <h6>Residential & Commercial Buildings</h6>
-                                  <p>From dream homes to iconic landmarks, RachTR offers reliable solutions for all your building needs.</p>
-                              </div>
-                          </div>
-                      </li>
-                      
-                      <li class="col-lg-4 col-md-4 col-sm-12 mx-5">
-                        <div class="projects_blogs">
-                            <div class="projects_img pb-1">
-                                <!-- Video -->
-                                
-                            </div>
-                    
-                            <!-- Slick Slider inside projects_blogs -->
-                            <div class="project-slider pb-1">
-                                <div class="project-slide"><img alt="Surat" src="https://static.wixstatic.com/media/386348_b4c2744705764bbf9b670142d8fdbe0f~mv2.jpg"></div>
-                                <div class="project-slide"><img alt="" src="https://static.wixstatic.com/media/386348_a04ae7f07dbd4324a5b059bcec6d91b6~mv2.jpg"></div>
-                                <div class="project-slide"><img alt="" src="https://static.wixstatic.com/media/386348_c6311a1c4ed34c70b7ce026c0988fb3c~mv2.jpg"></div>
-                                <div class="project-slide"><img alt="" src="https://static.wixstatic.com/media/386348_697367b1975c49028d04d1da9406f137~mv2.jpg"></div>
-                            </div>
-                    
-                            <div class="projects_txt">
-                                <h6>Residential & Commercial Buildings</h6>
-                                <p>From dream homes to iconic landmarks, RachTR offers reliable solutions for all your building needs.</p>
-                            </div>
+                <div class="col-md-6">
+                    <div class="museum-info">
+                        <div class="icon-box"><i class="fas fa-calendar-alt"></i></div>
+                        <div>
+                            <p><strong>Built:</strong></p>
+                            <p>2023</p>
                         </div>
-                    </li>
-                    
-                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="museum-info">
+                        <div class="icon-box"><i class="fas fa-landmark"></i></div>
+                        <div>
+                            <p><strong>Purpose:</strong></p>
+                            <p>Art museum & visitor center</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- Architect -->
+
+
+            <!-- Built Year -->
+
+
+            <!-- Purpose -->
+
+
+            <!-- Features -->
+            <div class="museum-features">
+                <p><strong>Seamless integration with nature:</strong> Built on an artificial lake with a flowing,
+                    undulating roof that creates a calm, immersive experience.</p>
+                <p><strong>Eco-friendly:</strong> Natural ventilation and sustainable systems blend with the
+                    surroundings.</p>
+            </div>
+
+            <!-- Awards (Fixed Section) -->
+            <div class="museum-info">
+                <div class="icon-box"><i class="fas fa-award"></i></div>
+                <div>
+                    <p><strong>Awards:</strong></p>
+                    <p>ADC International Architecture & Design Award 2023</p>
+                    <p>Recognized for innovation and environmental harmony</p>
+                </div>
+            </div>
+
         </div>
-    </section>
- <!-- This is a section-2 close -->
+    </div>
 
- 
-     
-    <!-- This is a section-9 open --> 
-       
-    <!-- This is a section-9 close -->     
-   </div>
-    <!-- This is a wrapper close -->
-<script src="js/jquery.min.js" type="text/jscript"></script>
-<script src="js/bootstrap.min.js" type="text/javascript"></script>
-<script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
-<script src="js/slick.js"></script>
-<script src="js/jquery.fancybox.min.js"></script>
-<script src="js/custom.js"></script>  
-  
-<script type="text/javascript">
-    $('#showLeft').click(function(){
-	$(this).toggleClass('open');
-	$(".nav").slideToggle();	
-});
-</script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
-    
-    
-</body>   
 </html>
-

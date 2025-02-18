@@ -264,9 +264,9 @@ $(document).ready(function () {
     arrows: true,
     infinite: true,
     speed: 500,
-    autoplay: true,
-    autoplaySpeed:3000,
-    fade: false,
+    autoplay: false,
+    // autoplaySpeed: 3000,
+    // fade: false,
     responsive: [
       {
         breakpoint: 996,
@@ -302,11 +302,11 @@ $(document).ready(function () {
     pauseOnHover: true,
     pauseOnFocus: true,
     infinite: true,
-    responsive : [
+    responsive: [
       {
         breakpoint: 996,
         settings: {
-          slidesToShow:2,
+          slidesToShow: 2,
           // slidesToScroll:2
         }
       },

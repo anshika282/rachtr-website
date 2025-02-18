@@ -264,7 +264,8 @@ $(document).ready(function () {
     arrows: true,
     infinite: true,
     speed: 500,
-    autoplay: false,
+    autoplay: true,
+    autoplaySpeed:3000,
     fade: false,
     responsive: [
       {
@@ -285,11 +286,12 @@ $(document).ready(function () {
     autoplay: true,
     fade: true,
     cssEase: 'linear'
+
   });
 
   $('.app-video-slider').slick({
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 0,
     centerMode: true,
@@ -300,6 +302,30 @@ $(document).ready(function () {
     pauseOnHover: true,
     pauseOnFocus: true,
     infinite: true,
+    responsive : [
+      {
+        breakpoint: 996,
+        settings: {
+          slidesToShow:2,
+          // slidesToScroll:2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          // slidesToScroll:1
+
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          // slidesToScroll: 1,
+        }
+      },
+    ],
 
   });
 

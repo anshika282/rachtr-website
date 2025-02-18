@@ -243,6 +243,10 @@
     list-style-type: disc !important;
 }
 
+.architectural-marvels {
+    background: #FFF5F0;
+}
+
 .architectural-marvels .slide-container .image-container {
     height: 480px;
     position: relative;
@@ -276,7 +280,7 @@
 
 
 .architectural-marvels .marvels-slider .slick-next {
-    right: 30px;
+    right: -15px;
 }
 
 .architectural-marvels .marvels-slider .slick-prev:before {
@@ -319,14 +323,48 @@
 
 }
 
-@media (max-width:1140px) {
-    .blog_list {
+.banner .banner-section .image-wrapper {
+    width: auto;
+    height: 200px;
+    position: relative;
+}
+
+
+
+@media (max-width:1220px) {
+    /* .blog_list {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    } */
+
+    .projects_blogs{
+        width: 300px;
     }
+
+   
+  
+
 }
 
+@media (min-width:1040px) and (max-width:1220px) {
+    
+    .marvels-slider{
+        display: flex;
+        width: 990px;
+    }
+
+    .architectural-marvels .slide-container .image-container {
+        height: 538px;
+        position: relative;
+    }
+    .architectural-marvels .marvels-slider .slick-prev {
+        left: -25px;
+    }
+    .architectural-marvels .marvels-slider .slick-next {
+        right: 2px;
+    }
+}
 @media (max-width:996px) {
     .project-slider {
         max-width: unset;
@@ -343,8 +381,18 @@
 }
 
 @media (max-width:786px) {
-    .project-slider {
+    .projects_blogs{
         max-width: 480px;
+    }
+
+    .app-video{
+        height: 200px;
+    }
+}
+
+@media (max-width:576px){
+    .projects_blogs{
+        max-width: 440px;
     }
 }
 
@@ -365,12 +413,16 @@
     }
 
     .project-slider {
-        max-width: 350px;
+        /* max-width: 350px; */
         height: 235px;
     }
 
     .project-slide {
         height: 220px;
+    }
+
+    .projects_blogs{
+        max-width: 310px;
     }
 
     .architectural-marvels .marvels-slider .slick-prev,

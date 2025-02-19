@@ -150,3 +150,30 @@
         max-width: 1120px;
     }
 }
+
+@media (max-width:996px){
+    .blogs-content .post-list>*{
+        max-width: 70%;
+        flex: 0 0 70%;
+    }
+
+
+}
+
+
+@media (max-width:768px){
+    .blogs-content .container{
+        width: 96%;
+    }
+    .blogs-content .archives{
+        display: none;
+    }
+    .blogs-content .blog-title{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .blogs-content .post-list>*{
+        max-width: 90%;
+        flex: 0 0 90%;
+    }
+}

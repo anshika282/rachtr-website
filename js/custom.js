@@ -5,23 +5,24 @@ document.querySelectorAll('.heart-btn').forEach(button => {
     this.classList.toggle('clicked');
   });
 });
-let count=0;
-document.querySelector('.like-btn').addEventListener('click', (event)=>{
+
+let count = 0;
+const likeBtn = document.querySelector('.like-btn');
+const likeCount = document.querySelector('#likeCount');
+
+likeBtn.addEventListener('click', (event) => {
     event.preventDefault();
-    
-    if(document.querySelector('.like-btn').style.color == "transparent"){
-       document.querySelector('.like-btn').style.color ="#e52a2a";
-       count++;
+
+    const isLiked = likeBtn.style.color === "rgb(229, 42, 42)"; // Check if the button is red
+
+    likeBtn.style.color = isLiked ? "transparent" : "#e52a2a";
+    count += isLiked ? -1 : 1;
+
+    if(count>0){
+      likeCount.textContent = count;
     }else{
-      document.querySelector('.like-btn').style.color ="transparent";
-      if(count)
-      count--;
+      likeCount.textContent = '';
     }
-
-    document.querySelector('#likeCount').innerHTML = count;
-    
-
-   
 
 });
 

@@ -5,6 +5,25 @@ document.querySelectorAll('.heart-btn').forEach(button => {
     this.classList.toggle('clicked');
   });
 });
+let count=0;
+document.querySelector('.like-btn').addEventListener('click', (event)=>{
+    event.preventDefault();
+    
+    if(document.querySelector('.like-btn').style.color == "transparent"){
+       document.querySelector('.like-btn').style.color ="#e52a2a";
+       count++;
+    }else{
+      document.querySelector('.like-btn').style.color ="transparent";
+      if(count)
+      count--;
+    }
+
+    document.querySelector('#likeCount').innerHTML = count;
+    
+
+   
+
+});
 
 
 $(document).ready(function () {

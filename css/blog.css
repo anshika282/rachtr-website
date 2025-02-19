@@ -1,0 +1,152 @@
+.blog-banner .banner-section .image-wrapper::before{
+    background: rgba(0, 0, 0, 0.7);
+}
+.blog-banner .banner-section .image-wrapper{
+    height: 170px;
+}
+
+
+.blogs-content .container {
+    width: 85%;
+}
+
+.blogs-content .blog-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.blog-category {
+    color: #ff6600;
+    text-decoration: none;
+    font-size: 14px;
+}
+.blog-category:hover {
+    text-decoration: underline;
+}
+.views-comments {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.related-posts img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.archive-list li {
+    list-style: none;
+}
+
+.blogs-content .card-img{
+    width: 60px;
+    height: 60px;
+}
+
+.blogs-content .card-img img{
+
+}
+
+.blogs-content .related-posts {
+    border: 1px solid #eeeeee;
+    padding: 15px;
+    gap: 12px;
+    align-items: flex-start;
+    padding-bottom:13px;
+}
+
+.blogs-content .related-posts .related-post-desc{
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  
+}
+
+.blogs-content .related-posts .related-post-desc a{
+    font-weight: 700;
+}
+
+
+.blogs-content .related-posts .related-post-desc p{
+    color: #4C89EA !important;
+    margin: 0;
+}
+.blogs-content .related-posts .related-post-desc a:hover{
+    color: #0064E6 !important; 
+}
+.blogs-content .related-posts .related-post-desc p:hover{
+    color: #4CB2F2 !important;
+    cursor: pointer;
+}
+
+.blogs-content .archives .archive-list {
+    border: 1px solid #eeeeee;
+}
+
+.blogs-content .archives .archive-list li{
+    text-align: start;
+    padding: 15px 20px;
+    font-size: 14px;
+}
+.blogs-content .archives .archive-list li:hover{
+    background: #EEECEC;
+}
+
+.fs-12 {
+    font-size: 12px !important;
+}
+
+.blogs-content .blog-stats .like-btn{
+    border:none;
+    background: none;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #f01212; /* Red outline */
+    margin-top: -5px;
+    height: 31px;
+}
+
+.pagination .page-item.disabled a {
+    color: #ccc; /* Light grey for disabled items */
+}
+
+.pagination .page-item.active a {
+    color: #e67e22; /* Orange color for active page */
+    font-weight: bold;
+}
+
+.pagination .page-link {
+    border: none; /* Remove default border */
+    color: black; /* Default text color */
+}
+
+.pagination .page-link:hover {
+    color: #e67e22; /* Hover effect */
+}
+
+.page-item.active .page-link {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+ .page-link:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+.pagination .page-link {
+    border: none; /* Remove default border */
+    outline: none !important; /* Remove focus outline */
+    box-shadow: none !important; /* Remove Bootstrap's default focus glow */
+    color: black; /* Default text color */
+}
+
+
+
+
+
+@media (min-width: 1400px) {
+    .blogs-content .container {
+        max-width: 1120px;
+    }
+}

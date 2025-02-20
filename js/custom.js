@@ -349,6 +349,45 @@ $(document).ready(function () {
 
   });
 
+});
 
+function handleSlider() {
+  if ($(window).width() <= 576) {
+      // Initialize slider only if it's not already initialized
+      if (!$('.blog-slider').hasClass('slick-initialized')) {
+        $('.blog-slider').slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          responsive: [
+              {
+                  breakpoint: 576,
+                  settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      infinite: true,
+                      dots: true,
+                      centerMode:true,
+                      centerPadding: '50px',
+                  }
+              }
+          ]
+      });
+      }
+  } else {
+      // Destroy slider if it's initialized
+      if ($('.blog-slider').hasClass('slick-initialized')) {
+          $('.blog-slider').slick('unslick');
+      }
+  }
+}
 
+// Run on page load
+handleSlider();
+
+// Run on window resize
+$(window).on('resize', function() {
+  handleSlider();
 });

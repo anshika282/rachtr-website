@@ -13,6 +13,10 @@
     cursor: pointer;
 }
 
+.blog-banner .banner-section .heading-holder h2{
+        color: #F0702A;
+}
+
 .x-icon{
     width: 15px;
     height: 19px;
@@ -103,6 +107,9 @@
     color: #0057E1;
 }
 
+.post-list .related-posts .related-post-desc p{
+    color: #000000 !important;
+}
 
 
 

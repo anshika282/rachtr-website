@@ -1,0 +1,53 @@
+.blogs-archive .card-image-wrapper{
+    display: flex;
+}
+.blogs-archive .card-image-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blogs-archive .blog-content{
+    position: relative;
+}
+.blogs-archive .blog-content::before {
+        content: ""; 
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 32px; /* Adjust as needed */
+        background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); 
+        pointer-events: none; /* Allows clicks to pass through */
+}
+
+.blogs-archive .blog-title:hover{
+    color: #F0702A;
+}
+
+.blogs-archive .blog-title{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
+}
+
+@media (max-width:768px){
+    .blogs-archive .blog-content::before {
+            position: unset;
+        }
+    
+    .blogs-archive .blog-content p:last-child{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: normal;
+        }
+    .blogs-archive .blog-title{
+            display: block;
+        }
+}

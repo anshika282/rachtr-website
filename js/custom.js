@@ -10,7 +10,8 @@ let count = 0;
 const likeBtn = document.querySelector('.like-btn');
 const likeCount = document.querySelector('#likeCount');
 
-likeBtn.addEventListener('click', (event) => {
+if (likeBtn !== null) {
+  likeBtn.addEventListener('click', (event) => {
     event.preventDefault();
 
     const isLiked = likeBtn.style.color === "rgb(229, 42, 42)"; // Check if the button is red
@@ -18,13 +19,14 @@ likeBtn.addEventListener('click', (event) => {
     likeBtn.style.color = isLiked ? "transparent" : "#e52a2a";
     count += isLiked ? -1 : 1;
 
-    if(count>0){
+    if (count > 0) {
       likeCount.textContent = count;
-    }else{
+    } else {
       likeCount.textContent = '';
     }
 
-});
+  });
+}
 
 
 $(document).ready(function () {
@@ -349,38 +351,61 @@ $(document).ready(function () {
 
   });
 
+
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: false,
+    asNavFor: '.slider-nav'
+  });
+
+  $('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true,
+    // vertical: true
+  });
+
+
 });
+
+
+
 
 function handleSlider() {
   if ($(window).width() <= 576) {
-      // Initialize slider only if it's not already initialized
-      if (!$('.blog-slider').hasClass('slick-initialized')) {
-        $('.blog-slider').slick({
-          dots: true,
-          infinite: true,
-          speed: 300,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          responsive: [
-              {
-                  breakpoint: 576,
-                  settings: {
-                      slidesToShow: 1,
-                      slidesToScroll: 1,
-                      infinite: true,
-                      dots: true,
-                      centerMode:true,
-                      centerPadding: '50px',
-                  }
-              }
-          ]
+    // Initialize slider only if it's not already initialized
+    if (!$('.blog-slider').hasClass('slick-initialized')) {
+      $('.blog-slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+              centerMode: true,
+              centerPadding: '50px',
+            }
+          }
+        ]
       });
-      }
+    }
   } else {
-      // Destroy slider if it's initialized
-      if ($('.blog-slider').hasClass('slick-initialized')) {
-          $('.blog-slider').slick('unslick');
-      }
+    // Destroy slider if it's initialized
+    if ($('.blog-slider').hasClass('slick-initialized')) {
+      $('.blog-slider').slick('unslick');
+    }
   }
 }
 
@@ -388,6 +413,6 @@ function handleSlider() {
 handleSlider();
 
 // Run on window resize
-$(window).on('resize', function() {
+$(window).on('resize', function () {
   handleSlider();
 });

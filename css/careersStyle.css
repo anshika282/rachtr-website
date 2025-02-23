@@ -1,22 +1,22 @@
-.career-banner .banner-section{
+.career-banner .banner-section {
     height: 630px;
     width: 100%;
     position: relative;
-}   
+}
 
-.career-banner .banner-section .image-wrapper{
+.career-banner .banner-section .image-wrapper {
     width: inherit;
     height: inherit;
 }
 
-.career-banner .banner-section .image-wrapper img{
+.career-banner .banner-section .image-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: top;
 }
 
-.career-banner .banner-section .banner-content{
+.career-banner .banner-section .banner-content {
     position: absolute;
     top: 38%;
     bottom: 0;
@@ -28,52 +28,51 @@
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     padding: 50px;
     z-index: 2;
 }
 
-.career-banner .banner-section::before{
+.career-banner .banner-section::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.68);
+    background: rgba(0, 0, 0, 0.68);
     z-index: 1;
 }
 
-.career-banner .banner-section button{
+.career-banner .banner-section button {
     width: 35%;
     border-radius: 0;
     padding: 10px;
     font-weight: 600;
 }
-.career-banner .banner-section button:hover{
+
+.career-banner .banner-section button:hover {
     color: #ee6e25;
     border: 1px solid #ee6e25;
     background: #ffffff;
 }
 
-.career-banner .banner-section .heading-holder span{
-    color : #ee6e25;
+.career-banner .banner-section .heading-holder span {
+    color: #ee6e25;
 }
-.career-banner .banner-section .heading-holder h2{
-    font-size : 45px;
+
+.career-banner .banner-section .heading-holder h2 {
+    font-size: 45px;
 }
 
 .rachtribe-section {
-    background-color: #E8E6E6 ;
+    background-color: #E8E6E6;
     padding: 4rem 0;
     position: relative;
 }
 
 
-.text-content {
-    
-
-}
+.text-content {}
 
 /* .rachtribe-section {
     background-color: #f8f9fa;
@@ -166,8 +165,8 @@
     color: white;
 }
 
-.career-left{
-    background: #E8E6E6 ;
+.career-left {
+    background: #E8E6E6;
 }
 
 
@@ -178,7 +177,7 @@
     gap: 15px;
 }
 
-.company-section{
+.company-section {
     background: #ffffff;
 }
 
@@ -290,9 +289,33 @@
     background: #E8E6E6;
 }
 
-.bg-style{
+.bg-style {
     color: #ffffff;
 }
+
+.life-at-rachtr .slider-container .slider-for .life-at-img {
+    /* width: 100px; */
+    height: 150px;
+}
+
+.life-at-rachtr .slider-container .slider-for .life-at-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.life-at-rachtr .slider-container .slider-nav .life-at-img-small {
+    width: 80px;
+    height: 70px;
+}
+
+.life-at-rachtr .slider-container .slider-nav .life-at-img-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 
 @media (max-width:1200px) {
     .career-banner .banner-section .banner-content {
@@ -300,4 +323,3 @@
         height: 45%;
     }
 }
-

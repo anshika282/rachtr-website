@@ -28,6 +28,14 @@ if (likeBtn !== null) {
   });
 }
 
+if(document.getElementById('cvUpload') !== null){
+    document.getElementById('cvUpload').addEventListener('change', function() {
+      let fileName = this.files.length > 0 ? this.files[0].name : "No file chosen";
+      document.getElementById('file-name').textContent = fileName;
+  });
+}
+
+
 
 $(document).ready(function () {
 
@@ -352,22 +360,22 @@ $(document).ready(function () {
   });
 
 
-  $('.slider-for').slick({
+  $('.main-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     fade: false,
-    asNavFor: '.slider-nav'
+    asNavFor: '.vertical-slider'
   });
 
-  $('.slider-nav').slick({
+  $('.vertical-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    asNavFor: '.slider-for',
+    asNavFor: '.main-slider',
     dots: false,
     centerMode: true,
     focusOnSelect: true,
-    // vertical: true
+    vertical: true
   });
 
 

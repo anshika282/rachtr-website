@@ -1,0 +1,147 @@
+.cv-banner .banner-section {
+  position: relative;
+    /* width: auto; */
+    margin-top: 120px;
+    height: 260px;
+}
+
+.cv-banner .banner-section::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.67);
+  z-index: 1;
+}
+
+.cv-banner .banner-section .image-wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+
+.cv-banner .banner-section .image-wrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cv-banner .banner-section .banner-content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  color: #e76025;
+}
+
+.upload-cv-form {
+  background: #eeeeee;
+}
+
+
+.upload-cv-form .apply-section {
+  max-width: 600px;
+  /* padding: 30px; */
+}
+
+.upload-cv-form .apply-section .form-control,
+.upload-cv-form .apply-section .form-select 
+{
+  border: 1px solid #7B7B7B;
+  
+}
+
+.upload-cv-form .apply-section input::placeholder,
+.upload-cv-form .apply-section select{
+  color: #595959  ;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.upload-cv-form .apply-section input,
+.upload-cv-form .apply-section select{
+  padding: 10px;
+}
+
+
+.upload-cv-form .btn-upload {
+  background-color: #e76025;
+  color: white;
+  width: 100%;
+}
+.upload-cv-form .btn-upload:hover {
+  background-color: #d1491e;
+}
+.upload-cv-form .btn-submit {
+  background-color: #e76025;
+  color: white;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 0;
+  font-weight: 400;
+  border: none;
+}
+.upload-cv-form .btn-submit:hover {
+  background-color: #474747;
+}
+.upload-cv-form .btn-upload{
+  width: 40%;
+  text-align: center; 
+}
+.upload-cv-form .btn-upload:hover{
+  background-color: #e76025;
+}
+.upload-cv-form .btn-upload:focus,
+.upload-cv-form .btn-submit:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.upload-cv-form h2{
+  font-weight: 500;
+}
+
+@media (max-width:998px){
+  .cv-banner .banner-section {
+    margin-top: 80px;
+    height: 200px;
+}
+}
+@media (max-width:768px){
+  .cv-banner .banner-section {
+      margin-top: 80px;
+  }
+}
+
+@media (max-width:499px){
+  .upload-cv-form .apply-section {
+    max-width: 600px;
+  }
+  .upload-cv-form .apply-section input,
+  .upload-cv-form .apply-section select {
+    padding: 15px;
+  }
+
+  .cv-banner .banner-section {
+    margin-top: 52px;
+    height: 110px;
+  }
+
+.upload-cv-form .btn-submit {
+  font-size: 14px;
+}
+.upload-cv-form .apply-section input::placeholder,
+.upload-cv-form .apply-section select{
+  font-size: 16px;
+}
+
+}

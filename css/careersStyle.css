@@ -293,26 +293,43 @@
     color: #ffffff;
 }
 
-.life-at-rachtr .slider-container .slider-for .life-at-img {
-    /* width: 100px; */
-    height: 150px;
+.life-at-rachtr .slider-container .main-slider .life-at-img {
+    
 }
 
-.life-at-rachtr .slider-container .slider-for .life-at-img img {
+.life-at-rachtr .slider-container .main-slider .life-at-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.life-at-rachtr .slider-container .slider-nav .life-at-img-small {
-    width: 80px;
-    height: 70px;
+.life-at-rachtr .slider-container .vertical-slider .life-at-img-small {
+    width: 100px;
+    height: 78px;
 }
 
-.life-at-rachtr .slider-container .slider-nav .life-at-img-small img {
+.life-at-rachtr .slider-container .vertical-slider .life-at-img-small img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.slider-container {
+    width: 100%;
+    max-width: 450px;
+    /* flex-wrap: wrap; */
+}
+.vertical-slider {
+    width: 90px;
+}
+.vertical-slider > * {
+    width: 85px;
+    cursor: pointer;
+}
+.main-slider {
+    max-width: 100%; /* Prevents overflow */
+    flex-grow: 1; /* Takes available space */
+
 }
 
 

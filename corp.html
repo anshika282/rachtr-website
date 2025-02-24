@@ -1,102 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Job Listing Card</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
-        .blog-card {
-            transition: transform 0.3s ease;
-            margin-bottom: 2rem;
+        .job-card {
+            max-width: 300px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
-        
-        .blog-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .category-tag {
-            color: #ff6b00;
-            font-size: 0.9rem;
-            text-decoration: none;
-        }
-        
-        .blog-title {
-            font-size: 1.5rem;
+        .job-card .job-header {
+            background: #e9ecef;
+            padding: 10px;
             font-weight: bold;
-            margin: 0.5rem 0;
-            color: #000;
-            text-decoration: none;
+            font-size: 16px;
         }
-        
-        .blog-meta {
-            font-size: 0.9rem;
-            color: #666;
+        .job-card .job-body {
+            padding: 10px;
         }
-        
-        .blog-image {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 8px;
+        .job-card .job-footer {
+            padding: 10px;
         }
-        
-        .heart-icon {
-            color: #dc3545;
-            cursor: pointer;
+        .apply-btn {
+            background-color: #475569;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            font-size: 14px;
+            border-radius: 5px;
+            transition: 0.3s;
         }
-        
-        .card-body {
-            padding: 1.25rem 0;
+        .apply-btn:hover {
+            background-color: #1e293b;
         }
     </style>
 </head>
 <body>
-    <div class="container py-5">
-        <div class="row">
-            <!-- First Blog Post -->
-            <div class="col-md-6">
-                <div class="blog-card">
-                    <a href="#" class="text-decoration-none">
-                        <img src="images/blog-main-img.jpeg" alt="Natural Stone Cladding" class="blog-image">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="category-tag">Jan 20</span>
-                                    <div class="category-tag">Industrial Floorings</div>
-                                </div>
-                                <div class="heart-icon">♡</div>
-                            </div>
-                            <h2 class="blog-title">Natural Stone Wet Cladding and Dry Cladding: A Face-off</h2>
-                            <div class="blog-meta">
-                                <span>77 views</span> • <span>0 comments</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Second Blog Post -->
-            <div class="col-md-6">
-                <div class="blog-card">
-                    <a href="#" class="text-decoration-none">
-                        <img src="images/blog-main-img.jpeg" alt="Marble Floor Maintenance" class="blog-image">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="category-tag">Jan 20</span>
-                                    <div class="category-tag">Industrial Floorings</div>
-                                </div>
-                                <div class="heart-icon">♡</div>
-                            </div>
-                            <h2 class="blog-title">Unlock all you need to know about Marble Floor...</h2>
-                            <div class="blog-meta">
-                                <span>37 views</span> • <span>0 comments</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+
+<div class="container mt-4">
+    <div class="job-card">
+        <div class="job-header">
+            Key Accounts and Specification - Building Materials Industry
+        </div>
+        <div class="job-body">
+            <p class="text-muted">1 day ago</p>
+        </div>
+        <div class="job-footer">
+            <button class="apply-btn">Apply now</button>
         </div>
     </div>
+</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,68 @@
+.product-section {
+    background: #fff;
+    margin-top: 120px;
+}
+
+
+
+.text-orange {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.accordion-button {
+    background: none;
+    color: #ff6600;
+    font-weight: bold;
+    border-bottom: 1px solid #ff6600;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.accordion-button::after {
+    content: "+";
+    font-size: 1.2rem;
+    color: #ff6600;
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: "-";
+    background: none;
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-thumbnails img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-dark {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.accordion-item{
+    border: none;
+}
+.accordion-button::after {
+    background: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #ff6600;  /* Keeps the default text color */
+    background-color: transparent !important;  /* Removes the background color */
+    box-shadow: none !important;  /* Removes the inner shadow */
+    /* border-bottom: 1px solid #ff6600; */
+}
+
+@media (min-width:1240px) {
+    .product-section .container {
+        max-width: 1024px;
+    }
+}

@@ -3,57 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Job Listing Card</title>
+    <title>Product Section</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <style>
-        .job-card {
-            max-width: 300px;
-            background: #f8f9fa;
-            border-radius: 10px;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-        .job-card .job-header {
-            background: #e9ecef;
-            padding: 10px;
-            font-weight: bold;
-            font-size: 16px;
-        }
-        .job-card .job-body {
-            padding: 10px;
-        }
-        .job-card .job-footer {
-            padding: 10px;
-        }
-        .apply-btn {
-            background-color: #475569;
-            color: white;
-            border: none;
-            padding: 6px 12px;
-            font-size: 14px;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        .apply-btn:hover {
-            background-color: #1e293b;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
+<style>
+    .product-section {
+    background: #fff;
+}
+
+.text-orange {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.accordion-button {
+    background: none;
+    color: #ff6600;
+    font-weight: bold;
+    border-bottom: 1px solid #ff6600;
+}
+
+.accordion-button::after {
+    content: "+";
+    font-size: 1.2rem;
+    color: #ff6600;
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: "-";
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-thumbnails img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-dark {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+</style>
 <body>
 
-<div class="container mt-4">
-    <div class="job-card">
-        <div class="job-header">
-            Key Accounts and Specification - Building Materials Industry
-        </div>
-        <div class="job-body">
-            <p class="text-muted">1 day ago</p>
-        </div>
-        <div class="job-footer">
-            <button class="apply-btn">Apply now</button>
-        </div>
-    </div>
-</div>
+    <section class="product-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Image & Description -->
+                <div class="col-lg-6">
+                    <div class="product-image text-center">
+                        <img src="images/life1.jpg" class="img-fluid" alt="Product Image">
+                    </div>
+                    <div class="product-thumbnails d-flex justify-content-center mt-2">
+                        <img src="images/life1.jpg" class="img-thumbnail me-2" alt="Thumb 1">
+                        <img src="images/life2.jpg" class="img-thumbnail" alt="Thumb 2">
+                    </div>
+                    <p class="mt-3">
+                        SG34 is a very low viscosity formulation for enhancing color intensity and gloss of natural stones...
+                    </p>
+                    <ul>
+                        <li>Color Enhancement</li>
+                        <li>Gloss</li>
+                        <li>Deep penetration</li>
+                        <li>High Color Fastness</li>
+                    </ul>
+                </div>
 
+                <!-- Accordion for Details -->
+                <div class="col-lg-6">
+                    <h2 class="product-title text-orange">RachTR SG 34</h2>
+                    <div class="accordion" id="productAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#surface">
+                                    RECOMMENDED SURFACES
+                                </button>
+                            </h2>
+                            <div id="surface" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                                <div class="accordion-body">Details about surfaces...</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#mixing">
+                                    MIXING RATIO
+                                </button>
+                            </h2>
+                            <div id="mixing" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                                <div class="accordion-body">Details about mixing...</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#coverage">
+                                    Coverage
+                                </button>
+                            </h2>
+                            <div id="coverage" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                                <div class="accordion-body">Coverage details...</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#shelf-life">
+                                    SHELF LIFE
+                                </button>
+                            </h2>
+                            <div id="shelf-life" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                                <div class="accordion-body">Shelf life details...</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#technical">
+                                    TECHNICAL DATA
+                                </button>
+                            </h2>
+                            <div id="technical" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                                <div class="accordion-body">Technical data details...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-dark">DOWNLOAD DATA SHEET</a>
+                <a href="#" class="btn btn-dark ms-2">DOWNLOAD CERTIFICATE</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

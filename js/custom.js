@@ -373,9 +373,20 @@ $(document).ready(function () {
     slidesToScroll: 1,
     asNavFor: '.main-slider',
     dots: false,
+    arrows:false,
     centerMode: true,
     focusOnSelect: true,
-    vertical: true
+    vertical: true,
+    responsive : [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 4,
+          centerMode:false
+          // slidesToScroll:2
+        }
+      }
+    ]
   });
 
 

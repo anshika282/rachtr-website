@@ -6,6 +6,8 @@ document.querySelectorAll('.heart-btn').forEach(button => {
   });
 });
 
+
+console.log("here ayt start");
 let count = 0;
 const likeBtn = document.querySelector('.like-btn');
 const likeCount = document.querySelector('#likeCount');
@@ -38,6 +40,32 @@ if(document.getElementById('cvUpload') !== null){
 
 
 $(document).ready(function () {
+  // console.log("Slick is initializing...");
+  $('.product-main-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.product-thumbnail-slider',
+    responsive : [
+      {
+        breakpoint: 992,  // At 992px and below
+        settings: {
+            slidesToShow: 1,  // Show only 1 slide
+            slidesToScroll: 1,
+            dots :true
+        }
+      }
+    ]
+
+  });
+  $('.product-thumbnail-slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.product-main-slider',
+      dots: false,
+      focusOnSelect: true
+  });
 
   // FAQ tab js open   
   $('ul.tabs li').on('click', function () {
@@ -265,14 +293,14 @@ $(document).ready(function () {
   })
 
   // case studies slider close    
-
+console.log("reached here b4 fancy");
 
   $('[data-fancybox="gallery"]').fancybox({
 
   });
-  $('[data-fancybox]').fancybox({
+  // $('[data-fancybox]').fancybox({
 
-  });
+  // });
 
   $('.project-slider').slick({
     slidesToShow: 1,
@@ -389,6 +417,7 @@ $(document).ready(function () {
     ]
   });
 
+   
 
 });
 
